@@ -50,10 +50,7 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('posts') }}">Posts</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('posts/create') }}">Create</a>
+                                <a class="nav-link" href="{{ url('/posts') }}">Posts</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -79,11 +76,7 @@
         </nav>
 
         <main class="py-4">
-            <div class="container">
-                <div class="col-8">
-                @yield('content')
-                </div>
-            </div>
+            @yield('content')
         </main>
     </div>
 </body>
